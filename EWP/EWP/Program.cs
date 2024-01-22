@@ -12,6 +12,7 @@ namespace EWP
         {
             Console.WriteLine("Welcome To Employee Wage Management System");
             Console.ReadLine();
+
         }
     }
 }
