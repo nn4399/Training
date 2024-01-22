@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EWP
 {
@@ -12,34 +8,38 @@ namespace EWP
         {
             Console.WriteLine("Welcome To Employee Wage Management System");
             Random rnd = new Random();
-            int attendence = rnd.Next(0,1);
-            switch (attendence)
+
+            int totalDays = 20;  
+            int totalWages = 0;
+
+            for (int day = 1; day <= totalDays; day++)
             {
-                case 0:
-                    Console.WriteLine("Present");
-                    break;
-                case 1:
-                    Console.WriteLine("Absent");
-                    break;
+                int workType = rnd.Next(0, 2);  
+
+                switch (workType)
+                {
+                    case 0:
+                        Console.WriteLine($"Day {day}: Full-time");
+                        totalWages += CalculateWages(20, 8);
+                        break;
+                    case 1:
+                        Console.WriteLine($"Day {day}: Part-time");
+                        totalWages += CalculateWages(20, 4);
+                        break;
+                    default:
+                        Console.WriteLine($"Day {day}: Invalid work type");
+                        break;
+                }
             }
-            if (attendence == 0)
-            {
-                Console.WriteLine("Present");
-            }
-            else
-            {
-                Console.WriteLine("Absent");
-            }
-            int wage_per_hour = 20;
-            int full_day = 8;
-            int uc2 = wage_per_hour * full_day;
-            Console.WriteLine(uc2);
-            int part_time = 4;
-            int uc3 = wage_per_hour * part_time;
-            Console.WriteLine(uc3);
+
+            Console.WriteLine($"Total wages for the month: {totalWages}");
+
             Console.ReadLine();
+        }
 
-
+        static int CalculateWages(int wagePerHour, int hoursWorked)
+        {
+            return wagePerHour * hoursWorked;
         }
     }
 }
