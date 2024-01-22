@@ -21,8 +21,9 @@ namespace EWP
             {
                 Console.WriteLine("Absent");
             }
-
-
+            int wage_per_hour = 20;
+            int full_day = 8;
+            int uc2 = wage_per_hour * full_day;
             Console.ReadLine();
 
         }
