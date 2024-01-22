@@ -13,15 +13,6 @@ namespace EWP
             Console.WriteLine("Welcome To Employee Wage Management System");
             Random rnd = new Random();
             int attendence = rnd.Next(0,1);
-            switch (attendence)
-            {
-                case 0:
-                    Console.WriteLine("Present");
-                    break;
-                case 1:
-                    Console.WriteLine("Absent");
-                    break;
-            }
             if (attendence == 0)
             {
                 Console.WriteLine("Present");
