@@ -24,7 +24,13 @@ namespace EWP
             int wage_per_hour = 20;
             int full_day = 8;
             int uc2 = wage_per_hour * full_day;
+            Console.WriteLine(uc2);
+            int part_time = 4;
+            int uc3 = wage_per_hour * part_time;
+            Console.WriteLine(uc3);
+
             Console.ReadLine();
+
 
         }
     }
