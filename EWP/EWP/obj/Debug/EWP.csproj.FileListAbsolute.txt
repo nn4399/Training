@@ -1,0 +1,7 @@
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\bin\Debug\EWP.exe.config
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\bin\Debug\EWP.exe
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\bin\Debug\EWP.pdb
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\obj\Debug\EWP.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\obj\Debug\EWP.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\obj\Debug\EWP.exe
+C:\Users\hp\Desktop\LocoBuzz\EWP\EWP\obj\Debug\EWP.pdb
