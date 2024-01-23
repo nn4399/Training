@@ -1,45 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace EWP
+namespace UC6
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Employee Wage Management System");
             Random rnd = new Random();
-
-            int totalDays = 20;  
-            int totalWages = 0;
-
-            for (int day = 1; day <= totalDays; day++)
+            int no_of_days = 0, no_of_hours = 0;
+            while (no_of_days < 20 && no_of_hours <100)
             {
-                int workType = rnd.Next(0, 2);  
-
-                switch (workType)
-                {
-                    case 0:
-                        Console.WriteLine($"Day {day}: Full-time");
-                        totalWages += CalculateWages(20, 8);
-                        break;
-                    case 1:
-                        Console.WriteLine($"Day {day}: Part-time");
-                        totalWages += CalculateWages(20, 4);
-                        break;
-                    default:
-                        Console.WriteLine($"Day {day}: Invalid work type");
-                        break;
-                }
+                int value = rnd.Next(3);
+                no_of_hours += value * 4;
+                no_of_days++;
+                Console.WriteLine($"value : {value}  Hours : {no_of_hours}   Days : {no_of_days}");
             }
-
-            Console.WriteLine($"Total wages for the month: {totalWages}");
-
+            int total_wages = no_of_hours * 20;
+            Console.WriteLine($"Wages : {total_wages}");
             Console.ReadLine();
-        }
-
-        static int CalculateWages(int wagePerHour, int hoursWorked)
-        {
-            return wagePerHour * hoursWorked;
         }
     }
 }
